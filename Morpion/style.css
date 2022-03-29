@@ -1,0 +1,42 @@
+/* Plateau de morpion */
+#tic-tac-toe-board {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Paramètres du canvas */
+.canvas-wrapper {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+/* Parent du canvas */
+.canvas-wrapper-parent {
+  transform-style: preserver-3d;
+}
+
+/* Score joueur 1 */
+.score1{
+  font-weight: bold;
+  position : absolute;
+  top: 20%;
+  left:20%;
+}
+
+/* Score joueur 2 */
+.score2{
+  font-weight: bold;
+  position : absolute;
+  top: 20%;
+  right: 20%;
+}
+
+/* Messages */
+.message{
+  font-weight: bold;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}

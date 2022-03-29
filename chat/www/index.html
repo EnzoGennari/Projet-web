@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Chat</title>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+    <script src="http://localhost:8866/socket.io/socket.io.js"></script>
+    <script src="js/backend.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"></style>
+  </head>
+
+  <body>
+  <div id="container">
+    <!-- Bloc pour le chat-->
+      <div id="bg_scroller">
+        <div id="conversation"></div>
+      </div>
+    <input id="data" placeholder="Écrire un message" />
+    <input type="button" id="datasend" value="send" style="display: none;"/>
+
+    <!-- Bloc pour le message d'accueil-->
+    <div id="board">
+    	 <div id="welcome" class="welcome">	
+    		<h1> Chat </h1>
+             Choisi un surnom pour rejoindre la discussion !<br/><br/>
+
+          <div id="stats">Il y a <b><span id="users"></span> </b>personness connectées.</div><br/>
+          <div id="error">&nbsp;</div>
+          <input type="text" id="nickname" placeholder="Choisis ton surnom !"/>
+          <input type="button" value="Rejoindre la discussion" id="join" />
+        </div>
+    </div>
+  </div>
+  </body>   
+</html>
